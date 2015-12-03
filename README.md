@@ -17,7 +17,7 @@ As a refresher, here's a list of commands to help you with this task:
 Remember, it's always helpful to know where you are in your directory tree in relation to where you want to go. Keep that in mind as you write out your command-line paths!
 
 ### Get the files and set up
-At the top of the page, click the "Open In Nitrous" link. This will open a new Nitrous IDE tab in your browser that will have forked the project repopository to your GitHub account and also cloned your forked repository to your Nitrous virtual environment. Once in Nitrous, you will:
+At the top of the page, click the "Open In Nitrous" link. This will open a new Nitrous IDE tab in your browser that will have forked the project repository to your GitHub account and also cloned your forked repository to your Nitrous virtual environment. Once in Nitrous, you will:
 
 + See "Current lab" and "Lab directory" printed at the top of the command line. This reminds you what lab you are working on and in what directory you will be working. 
 
@@ -38,32 +38,31 @@ Use the commands we've learned to move the animals to their right places. If eve
 
 ### Let's Move One File Together
 
-Notice that the `painting-elephants.jpg` image is located in `find-missing-pet < cats < indoor < back-alley`. But really, the painting elephant should go inside of `find-missing-pet < elephants < painters`. 
+Notice that the `toy-dog.jph` image is located in `find-missing-pet < dogs < outdoor < australia`. But really, the toy dog should go inside of `find-missing-pet < dogs < domestic < toy`. 
 
 We can move this elephant image by entering in terminal from the main directory of this project...
 
 ```bash
-cd cats
-cd indoor
-cd back-alley
-mv painting-elephants.jpg ..
+cd dogs
+cd wild
+cd australia
+mv toy-dog.jpg ..
 cd ..
-mv painting-elephants.jpg ..
+mv toy-dog.jpg ..
 cd ..
-mv painting-elephants.jpg ..
-cd ..
-mv painting-elephants.jpg elephants
-cd elephants
-mv painting-elephants.jpg painters
+mv toy-dog.jpg domestic
+cd domestic
+mv toy-dog.jpg toy
+
 ```
 
-BUT WOW that's a lot of steps. Programming is all about making things simple, so there has to be a better way. In fact, we can actually combine all the steps into one short line:
+BUT WOW that's a lot of steps. Programming is all about making things simple, so there has to be a better way. In fact, we can actually combine all the steps into one short line. If inside the main `hs-code-club-missing-pet-lab` directory you can enter:
 
 ```bash
-mv cats/indoor/back-alley/painting-elephants.jpg elephants/painters
+mv dogs/wild/australia/toy-dog.jpg dogs/domestic/toy
 ```
 
-For this, we're using `relative paths`. We're inside of the `find-missing-pet` directory, and we're not going to use `cd` to move ourselves anywhere.Because `painting-elephants.jpg` doesn't exist inside the `find-missing-pet` directory, we have to tell the computer the path to go to find that image, which is through the `cats` directory, and then `indoor` and then finally `back-alley`.
+For this, we're using `relative paths`. We're inside of the `find-missing-pet` directory, and we're not going to use `cd` to move ourselves anywhere.Because `toy-dog.jpg` doesn't exist inside the `find-missing-pet` directory, we have to tell the computer the path to go to find that image, which is through the `dogs` directory, and then `wild` and then finally `australia`.
 
-Next, we have to tell the computer where to move the image. Because we're inside `find-missing-pet` and so is the `elephants` directory, we can just go straight there, and then into `painters`.
+Next, we have to tell the computer where to move the image. Because we're inside `find-missing-pet` and so is the `dogs` directory, we can just go straight there, and then into `domestic` and finally `toy`.
 <a href='https://learn.co/lessons/find-missing-pet' data-visibility='hidden'>View this lesson on Learn.co</a>
