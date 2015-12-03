@@ -12,8 +12,6 @@ class Animal
     :toy_dog => './dogs/domestic/toy/toy_dog.jpg',
     :australian_wild_dog => './dogs/wild/australia/australian-wild-dog.jpg',
     :wolf => './dogs/wild/USA/wolf.jpg',
-    :circus_elephant => './elephants/circus/circus-elephant.jpg',
-    :painting_elephant => './elephants/painters/painting-elephants.jpg',
   }
 
   def self.create_name(animal)
