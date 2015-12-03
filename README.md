@@ -65,4 +65,5 @@ mv dogs/wild/australia/toy-dog.jpg dogs/domestic/toy
 For this, we're using `relative paths`. We're inside of the `find-missing-pet` directory, and we're not going to use `cd` to move ourselves anywhere.Because `toy-dog.jpg` doesn't exist inside the `find-missing-pet` directory, we have to tell the computer the path to go to find that image, which is through the `dogs` directory, and then `wild` and then finally `australia`.
 
 Next, we have to tell the computer where to move the image. Because we're inside `find-missing-pet` and so is the `dogs` directory, we can just go straight there, and then into `domestic` and finally `toy`.
+
 <a href='https://learn.co/lessons/find-missing-pet' data-visibility='hidden'>View this lesson on Learn.co</a>
